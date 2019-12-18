@@ -1,10 +1,23 @@
-Tic-Tac-Toe tech test
+# Tic-Tac-Toe tech test
+
+The business logic for the much loved game of Tic-Tac-Toe :)
+
 [Image to go here.]
 
-This is a very common tech test as it demonstrates a candidate's knowledge of basic data structures.
 
 ### Using the app.:
 
+First, clone this repository. Then:
+
+```
+> bundle install
+> rspec # Run the tests to ensure it works
+
+> #use irb or REPL to interact with the code.
+> require './lib/tic-tac-toe.rb' # require the file
+> ...
+> exit # to quit
+```
 
 ## The brief
 (Acceptance Criteria) The rules of tic-tac-toe are as follows:
@@ -16,21 +29,38 @@ This is a very common tech test as it demonstrates a candidate's knowledge of ba
 * A player WINS if they claim all the fields in a ROW, COLUMN or DIAGONAL; (else other player LOSES)
 * A game is over if a player wins
 * A game is over when ALL_FIELDS_ARE_TAKEN
-**Build the business logic for a game of tic tac toe. It should be easy to implement a working game of tic tac toe by combining your code with any user interface, whether web or command line.**
+
 
 ### User Stories
  ```
- As a ...
- I want to ...
- So that ...
+ As a Player
+ I want to play a game
+ So that I can take a turn
 
- As a ...
- I want to ...
- So that ...
+ As a Player
+ I want to take a turn
+ So that I can claim a field
+
+ As a Player
+ I want to claim a field
+ So that I can 'claim a row position'
+
+ As a Player
+ I want to claim a field
+ So that I can 'claim a column position'
+
+ As a Player
+ I want to claim a field
+ So that I can 'claim a diagonal position'
+
+ As a Player
+ I want to 'claim 3 successive positions'
+ So that I can Win a game
  ```
 
 ### Class Diagram
 Nam malesuada egestas sodales. Nam nec ultricies nisi, ut condimentum ipsum. Sed sagittis tortor odio, sed congue lectus dignissim vitae. Fusce ut nibh vel dolor porttitor convallis.
+
 ![Class diagram (v1)](https://user-images.githubusercontent.com/33905131/71097340-c107f280-21a7-11ea-8e61-f921d5a88323.jpg)
 
 
