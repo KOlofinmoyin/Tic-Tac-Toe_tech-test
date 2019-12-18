@@ -68,38 +68,57 @@ Nam malesuada egestas sodales. Nam nec ultricies nisi, ut condimentum ipsum. Sed
 Sed id quam non orci convallis porta ut at eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus ornare eget massa placerat pharetra. Morbi ac arcu ut quam accumsan placerat. Nullam et porttitor leo.
 
 INPUT    |   OUTPUT
+
 **TURNS**
+```
 top-left
 'X'  ->      'X'|  |  
             ------------
+```
+
 top-mid
+```
 'O'  ->        | 'O' |  
             ------------            
+```
+
+```
 top-right
 'X'  ->         |  |'X'  
             ------------
+```
 
 **WIN:**            
+
 row Win
+```
 'O'  ->         'O'| 'O' | 'O'
             ------------
+```
+
 column Win
+```
 'O'  ->     'O' |  |    
             ------------            
             'O' |  |
             ------------
             'O' |  |
+```
 
 diagonal Win
+```
 'X'  ->     'X' |  |
             ------------
                 |'X'|
             ------------
                 |  | 'X'
+```
 
 **DRAW**
+```
 'O' & 'X' ->  'X'|'X'|'O'
              ------------
               'O'|'O'|'X'
               ------------
               'X'|'O'|'X'
+```
