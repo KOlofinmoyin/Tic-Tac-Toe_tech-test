@@ -1,6 +1,6 @@
 require 'tic_tac_toe'
 
-describe TicTacToe do
+describe Play do
   let(:tic_tac_toe) { described_class.new }
   let(:move) { :top_L }
 
@@ -9,15 +9,15 @@ describe TicTacToe do
       let(:turn) { 'X||' }
 
       it 'takes :top_L from Player-X and returns X||' do
-        expect(tic_tac_toe.play(move,turn)).to eq ['X||']
+        expect(tic_tac_toe.play(move, turn)).to eq ['X||']
       end
     end
 
     describe 'Player O turn' do
-        let(:turn) { 'O||' }
+      let(:turn) { 'O||' }
 
       it 'takes :top_L from Player-O and returns O||' do
-        expect(tic_tac_toe.play(move,turn)).to eq ['O||']
+        expect(tic_tac_toe.play(move, turn)).to eq ['O||']
       end
     end
   end
